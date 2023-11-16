@@ -1,9 +1,10 @@
 pipeline {
-    agent any {
+    agent any
         stages {
-            steps {
+            stage('Clone') {
+                steps {
                 git 'https://github.com/duyhienn2012/demoJenkinsFile.git'
-            }
+                }
+            } 
         }
-    }
 }
